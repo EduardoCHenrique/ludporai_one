@@ -13,7 +13,7 @@
         <div id="site-title">
           <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home">
-            <?php echo esc_html( get_bloginfo( 'name' ) ); ?> teste
+            <?php echo esc_html( get_bloginfo( 'name' ) ); ?> teste teste teste
           </a>
           <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?>
         </div>
