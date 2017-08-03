@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: LudPorAi_One
 Theme URI: https://github.com/tidythemes/LudPorAi_One
@@ -13,6 +14,203 @@ Text Domain: LudPorAi_One
 LudPorAi_One WordPress Theme © 2011-2017 TidyThemes
 LudPorAi_One is distributed under the terms of the GNU GPL
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
-.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'OpenSans, arial';
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.site__logo {
+  width: 10rem;
+  height: 7rem;
+  display: inline-block;
+  background-image: url(./img/logo.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.header {
+  text-align: center;
+  padding: 2rem; }
+
+.header__item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0; }
+  .header__item--left {
+    justify-content: flex-start; }
+  .header__item--right {
+    justify-content: flex-end; }
+  .header__item--center {
+    justify-content: center; }
+
+.header__nav {
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__nav__list__item {
+  margin: 0 3rem; }
+
+.posts__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem; }
+
+.home__post-thumb {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 20vw;
+  justify-content: center;
+  margin: 2rem;
+  overflow: hidden;
+  width: calc(33% - 4rem); }
+
+.home__post-thumb__link {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.home__post-thumb__text-wrapper {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: all .1s ease-in-out; }
+  .home__post-thumb:hover .home__post-thumb__text-wrapper {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: .2rem solid white; }
+
+.home__post-thumb__text {
+  color: white;
+  font-family: 'Crimson Text', serif;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  width: 60%; }
+
+.home__post-thumb__figure {
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  position: relative; }
+  .home__post-thumb:hover .home__post-thumb__figure {
+    filter: brightness(0.7); }
+
+.home__post-thumb__image {
+  width: 33vw;
+  object-fit: fill; }
+
+@media only screen and (max-width: 768px) {
+  .home__post-thumb__image {
+    width: 50vw; }
+  .home__post-thumb {
+    width: calc(50% - 4rem);
+    height: 26vw; } }
+
+@media only screen and (max-width: 450px) {
+  .home__post-thumb__image {
+    width: 100vw; }
+  .home__post-thumb {
+    width: 100%;
+    height: 55vw;
+    margin: 2rem 0; } }
