@@ -17,4 +17,4 @@
   <?php endwhile; endif; ?>
 </ul>
 
-<?php get_footer(); ?> 
+<?php /* get_footer(); */ ?> 
